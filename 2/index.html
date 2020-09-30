@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DOM eventss">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>DOMEvent</title>
+</head>
+
+<body>
+
+    <div class="modalmenu" onclick="hideModal()">
+        <span class=" material-icons closeIcons"> cancel </span>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#gallery">GALLERY</a>
+
+    </div>
+
+    <nav class="navbar">
+        <h3 class="brand"><b>HAIPABIS</b></h3>
+        <div class="menuu">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+
+        <span class="material-icons " id="menucon" onclick="showModal()">menu</span>
+
+
+    </nav>
+    <main class="container">
+        <section id="home" class="home">
+
+
+            <h2>HaIpAbIs</h2>
+
+            <p class="tagline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime excepturi obcaecati.</p>
+
+        </section>
+
+
+        <section id="about" class="about">
+
+            <div class="contain">
+                <img src="https://images.unsplash.com/photo-1440606797942-6cc04c045447?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80"
+                    alt="" class="profile">
+                <div class="desc-profile">
+                    <h2 class="title">Who Am I</h2>
+                    </br>
+                    <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio sed quas eveniet
+                        nisi
+                        vitae nobis sapiente
+                        nam, aspernatur enim facilis fuga, expedita modi repellat temporibus possimus adipisci
+                        corrupti unde reprehenderit.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="gallery" class="gallery">
+            <div class="col">
+                <img src="https://images.unsplash.com/photo-1554925434-08faa2f77c00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=285&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1600269452339-56203889e71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1596901437184-38a0b3db9e79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                    alt="">
+
+                <img src="https://images.unsplash.com/photo-1569008535331-ce4bc9eaa9a5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                    alt="">
+            </div>
+
+            <div class="col">
+                <img src="https://images.unsplash.com/photo-1559924546-d56d49aa9243?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1518034928651-17304b7c3740?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1551556069-fc1286052053?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=357&q=80"
+                    alt="">
+
+                <img src="https://images.unsplash.com/photo-1503342296413-28a6ec3768b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                    alt="">
+            </div>
+
+            <div class="col">
+                <img src="https://images.unsplash.com/photo-1513521712264-512ceb91a940?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1572023380616-3ce84db9e4d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=701&q=80"
+                    alt="">
+                <img src="https://images.unsplash.com/photo-1554925051-f668ed70d520?ixlib=rb-1.2.1&auto=format&fit=crop&w=288&q=80"
+                    alt="">
+
+                <img src="https://images.unsplash.com/photo-1577990780770-3676301d8760?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt="">
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact">
+            <img src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="">
+        </section>
+    </main>
+    <!-- 
+
+    <footer class="footer">
+        <div class="left">
+            <h2>site map</h2>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#gallery">GALLERY</a>
+        </div>
+
+        <div class="right">
+            <div class="col1">
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">phone</label>
+                    <input type="phone" name="phone" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" re>
+                </div>
+            </div>
+
+
+            <div class="col2">
+                <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="kirim">
+                        kirim pesan
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer> -->
+
+
+    <script src="./main.js"> </script>
+</body>
+
+</html>

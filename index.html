@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DOM eventss">
+    <link rel="stylesheet" href="./main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>DOMEvent</title>
+</head>
+
+<body>
+
+    <div class="modalmenu" onclick="hideModal()">
+        <span class="material-icons closeIcons"> cancel </span>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#contact">CONTACT</a>
+        <a href="#gallery">GALLERY</a>
+
+    </div>
+
+    <nav class="navbar">
+        <h3 class="brand">HaipAbis</h3>
+        <span class="material-icons menuIcons" onclick="showModal()">menu</span>
+
+
+    </nav>
+    <main class="container">
+        <section id="home" class="home">
+            <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg"
+                alt="" class="heroimage">
+            <h1 class="heroText">
+                WEB <span style="color:rgb(233, 1, 71) ;">PROFILE</span> </br> RICO AGUSTINUS
+
+            </h1>
+        </section>
+        <section id="about" class="about">
+            <div class="aboutAlert">
+                Selamat datang di website sederhana kami <span class="material-icons alertClose"
+                    onclick="hideaboutalert()">
+                    close
+                </span>
+
+            </div>
+            about
+
+        </section>
+
+
+        <section id="contact" class="contact">contact</section>
+
+        <section id="gallery" class="gallery">
+
+            <span class="material-icons" id="galicon">
+                motion_photos_on
+            </span>
+
+            <h1 class="animate__animated animate_bounce">An animated element</h1>
+
+        </section>
+
+    </main>
+
+    <footer class=" footer">
+        <div class="left">
+            <h2>site map</h2>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#gallery">GALLERY</a>
+        </div>
+
+        <div class="right">
+            <div class="col1">
+                <div class="form-group">
+                    <label for="name">name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">phone</label>
+                    <input type="phone" name="phone" id="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email" re>
+                </div>
+            </div>
+
+
+            <div class="col2">
+                <div class="form-group">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+                </div>
+
+                <div class="form-group">
+                    <button class="kirim">
+                        kirim pesan
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+    <script src="./main.js"> </script>
+</body>
+
+</html>
