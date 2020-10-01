@@ -59,10 +59,10 @@ a{
     justify-content: flex-start;
     align-items: center;
     background-color: rgb(7, 36, 31);
-    padding:0 10%;
+    padding:0 40px;
     position: sticky ;
     top: 0;
-    z-index: 100;
+    z-index: 200;
     
 }
 
@@ -109,13 +109,22 @@ a{
 .home{
     background-color: rgb(7, 36, 31);
     gap: 20px;
-    justify-content: center;
-    color: white    ;
+    justify-content: flex-start;
+    color: white;
+    flex-direction: column;
 }  
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+   
+}
 
 .heroimage{
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
     border-radius:300px 300px 20px 300px;
     object-fit: cover;
     object-position: 0px 0;
@@ -140,13 +149,54 @@ a{
     
     
 }
-.about{
-    background-image: url("https://picsum.photos/seed/100/900");
+.aboutme{
+    display: grid !important;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    width: 100vw;
+    grid-template-areas: 
+    "box1 box2"
+    "box3 box4"
+    ;
 
-    flex-direction: column;
-    justify-content: flex-start;
    
 }
+.box{
+    padding: 40px;
+    height: 50vh;
+}
+.box1{
+    grid-template: box1;
+    background-image: url('https://picsum.photos/seed/22/900');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 100px 200px;
+    
+}
+.box2{   
+    grid-template: box2;
+    font-size: large;
+    text-align: justify;
+
+}
+
+
+
+.box3{
+    grid-template: box3;
+     font-size: large;
+    text-align: justify;
+}
+
+.box4{
+    grid-template: box4;
+    background-image: url('https://picsum.photos/seed/90/900');
+    background-size: cover;
+    background-position: center;
+    border-radius: 200px 100px 20px 20px;
+}
+
+
 .contact{
     background-image: url("https://picsum.photos/seed/56/900");
     
@@ -233,12 +283,12 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     background-color: rgb(139, 0, 53);
     color: white;
     position: sticky;
     top: 10vh;
     left: 0;
+    z-index: 100;
 
 }
 
