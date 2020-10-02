@@ -24,3 +24,36 @@ const hideaboutalert = () => {
     aboutAlert.style.display = 'none'
 }
 
+// tangkap element
+let gallery = document.getElementById('gallery')
+let imggallery = document.getElementById('img-gallery')
+let img = 209;
+
+
+for (let a = 0; a < 36; a++) {
+    imggallery.innerHTML += `
+
+    <img src ="https://picsum.photos/seed/${img++}/300/" />`
+}
+
+
+
+// // insert html syntax into gallery
+
+
+
+// gallery.style.gap = "20px"
+// gallery.style.flexDirection = "column"
+
+
+// // imggallery.innerHTML += `
+
+//     <h1>GALLERY</h1>
+//     <img src ="https://picsum.photos/seed/47/300" />
+//     <img src ="https://picsum.photos/seed/67/300" />
+//     <img src ="https://picsum.photos/seed/${i}/300" />
+//     <img src ="https://picsum.photos/seed/107/300" />
+
+// `
+// gallery.style.gap = "20px"
+// gallery.style.flexDirection = "column"

@@ -14,7 +14,7 @@ body{
     padding:0;
     margin:0;
     overflow-x: hidden;
-    background-color:white;
+    background-color:ghostwhite;
     user-select: none;
 }
 a{
@@ -47,9 +47,9 @@ a{
 }
 
 .modalmenu a:hover{
-    color: rgb(201, 225, 65);
+    color:rgb(86, 133, 119);
     font-size: 2.1rem;
-    font-weight: 20px;
+    font-weight: 30pt;
 }
 
 .navbar{
@@ -170,7 +170,7 @@ a{
     background-image: url('https://picsum.photos/seed/22/900');
     background-size: cover;
     background-position: center;
-    border-radius: 20px 20px 100px 200px;
+    border-radius: 0  0 100px 200px;
     
 }
 .box2{   
@@ -202,9 +202,22 @@ a{
     
 }
 .gallery{
-    background-image: url("https://picsum.photos/seed/15/900");
     justify-content: center;
     align-items: center;
+    padding:34px;
+    flex-direction: column;
+   
+}
+#img-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+#img-gallery img:hover{
+    box-shadow: 5px 7px 6px rgb(88, 88, 88);
+    border-radius: 200px 20px 200px 20px;
+    transition:.5s;
 }
 
 #galicon{
